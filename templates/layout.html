@@ -1,0 +1,277 @@
+<!--
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<title>— guido-consultoria-financeira</title>
+<body>
+  <header>
+    <h1>guido-consultoria-financeira</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Welcome</a></li>
+        {% for href, title in [
+          ['/blog', 'Blog'],
+          ['/projects', 'Projects'],
+          ['/about', 'About']
+        ] %}
+          <li{% if this.is_child_of(href) %} class="active"{% endif
+            %}><a href="{{ href|url }}">{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+  </div>
+  <footer>
+    &copy; Copyright 2019 by Guido Luz Percú.
+  </footer>
+</body>
+-->
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="pt-BR">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>{% block title %}{% endblock %} — guido-consultoria-financeira</title>
+	<!--Favicon-->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+	<!--Bootstrap Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="{{ '/static/css/bootstrap.css'|url }}">
+	<!--Font Awesome Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="{{ '/static/css/all.min.css'|url }}">
+	<!--Animate Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="{{ '/static/css/animate.css'|url }}">
+	<!--Main Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="{{ '/static/css/style.css'|url }}">
+	<!--Responsive Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="{{ '/static/css/responsive.css'|url }}">
+</head>
+
+<body class="body-class">
+	<!--Start Preloader-->
+	<div class="site-preloader">
+		<div class="spinner">
+			<div class="double-bounce1"></div>
+			<div class="double-bounce2"></div>
+		</div>
+	</div>
+	<!--End Preloader-->
+	<!-- Main Menu Area Start -->
+	<header id="mainHeader" class="header">
+		<!-- Start Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light p-0">
+			<div class="container">
+				<a class="navbar-brand" href="#welcomeArea">
+					Finan
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+              {% for href, title in [
+                ['#welcomeArea', 'Home'],
+                ['#aboutUs', 'About'],
+                ['#wcu', 'Choose Us'],
+                ['#package', 'Pricing'],
+                ['#investors', 'Team'],
+                ['#footer', 'Contact']
+              ] %}
+                <li class="nav-item"><a class="nav-link" href="{{ href|url }}">{{ title }}</a></li>
+              {% endfor %}
+					</ul>
+					<div class="viewPlan">
+						<a href="#package">
+							View Plan
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navigation -->
+		<div class="clearfix"></div>
+	</header>
+  <!-- Main Menu Area End -->
+  
+  {% block body %}{% endblock %}
+
+	<!-- Footer Area Start -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row newslatterBox">
+				<div class="col-12">
+					<div class="box d-flex">
+						<div class="left">
+							<h2>
+								Join Our Newslatter
+							</h2>
+							<div class="sectionSeparator"></div>
+						</div>
+						<div class="right">
+							<form action="#">
+								<input type="text" placeholder="Enter your email">
+								<button type="submit">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="box">
+						<div class="logo">
+							<a href="#">
+								Finan
+							</a>
+						</div>
+						<p>
+							We are a full service Digital Marketing Agency all
+							the foundational tool you need inbound success.
+							With this module theres no need to another day.
+						</p>
+						<div class="social_links">
+							<ul>
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-google-plus-g"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="box box2">
+						<h2>
+							Links
+						</h2>
+						<ul>
+							<li>
+								<a href="#">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									About
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Services
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									FAQ
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="box box3">
+						<h2>
+							About Us
+						</h2>
+						<ul>
+							<li>
+								<a href="#">
+									About Us
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Blog
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Contact Us
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sign in
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="box box4">
+						<h2>
+							Contact Us
+						</h2>
+						<p>
+							512, Main road ST, MA 176
+							Charls Town
+						</p>
+						<a href="#">
+							info@example.com
+						</a>
+						<a href="#">
+							877-559-9826
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p class="text-center">
+				&copy; Copyright 2019 by Guido Luz Percú.
+			</p>
+		</div>
+	</footer>
+	<!-- Footer Area End -->
+
+
+	<!--Start ClickToTop-->
+	<div class="totop">
+		<a href="#top"><i class="fa fa-arrow-up"></i></a>
+	</div>
+	<!--End ClickToTop-->
+
+
+	<!--jQuery JS-->
+	<script src="{{ '/static/js/jquery.min.js'|url }}"></script>
+	<!--Bootstrap JS-->
+	<script src="{{ '/static/js/bootstrap.min.js'|url }}"></script>
+	<script src="{{ '/static/js/popper.js'|url }}"></script>
+	<!--Main-->
+	<script src="{{ '/static/js/main.js'|url }}"></script>
+
+</body>
