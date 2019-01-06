@@ -466,18 +466,18 @@ Welcome Area End
 /* ============================================
 6. About Area Start
 =============================================== */
-#aboutUs {
+#sobre {
     margin-top: 32px;
 }
 
-#aboutUs .heading-title p {
+#sobre .heading-title p {
     margin-top: 3px;
     font-size: 16px;
     color: #575f84;
     margin-bottom: 24px;
 }
 
-#aboutUs .content p {
+#sobre .content p {
     color: #575f84;
 }
 
@@ -847,28 +847,28 @@ Feature Area Start
  10. Why Should Choose Us Area Start
  ==================================================== */
 
-#wcu {
+#textos {
     background: url(../img/whaychoseusbg.png) no-repeat bottom;
     padding: 124px 0px 102px;
 }
 
-#wcu .heading-title h2 {
+#textos .heading-title h2 {
     margin-bottom: 9px;
 }
 
-#wcu .heading-title p {
+#textos .heading-title p {
     margin-top: 3px;
     margin-bottom: 68px;
 }
 
 
 
-#wcu .heading-title {
+#textos .heading-title {
     margin-bottom: 30px;
 }
 
 
-#wcu .box {
+#textos .box {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
     margin-bottom: 30px;
     background: #fff;
@@ -878,24 +878,24 @@ Feature Area Start
     transition: all 0.3s ease-in-out;
 }
 
-#wcu .box .content {
+#textos .box .content {
     padding: 47px 30px 50px;
 }
 
-#wcu .box .content h3 {
+#textos .box .content h3 {
     color: #384371;
     font-weight: 600;
 }
 
 
-#wcu .box .content p {
+#textos .box .content p {
     color: #575f84;
     line-height: 30px;
     margin: 16px 0px 23px;
 }
 
 
-#wcu .box .viweBtn {
+#textos .box .viweBtn {
     width: 140px;
     height: 50px;
     border: 2px solid #fe846f;
@@ -909,13 +909,13 @@ Feature Area Start
     display: inline-block;
 }
 
-#wcu .box .viweBtn:hover {
+#textos .box .viweBtn:hover {
     border-color: #fe846f;
     background: #fe846f;
     color: #fff;
 }
 
-#wcu .box:hover {
+#textos .box:hover {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
 }
 

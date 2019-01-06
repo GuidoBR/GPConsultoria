@@ -79,7 +79,7 @@
     .row.aboutTop {
         margin-top: 100px;
     }
-    #aboutUs {
+    #sobre {
         margin-top: 100px;
     }
     h2 {
@@ -155,7 +155,7 @@
     #welcomeArea .topcontent {
         padding: 194px 0px 30px;
     }
-    #aboutUs .right img{
+    #sobre .right img{
         margin-top: 50px;
     }
     .table .media img {
@@ -329,7 +329,7 @@
     height: 50px;
     line-height: 50px;
     }
-    #wcu .box .viweBtn {
+    #textos .box .viweBtn {
         width: 120px;
         height: 40px;
         line-height: 40px;
