@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<title>{% block title %}{% endblock %} — guido-consultoria-financeira</title>
+	<title>{% block title %}{% endblock %} — Consultoria Financeira Pessoal</title>
 	<!--Favicon-->
 	<link rel="shortcut icon" type="{{ '/static/image/png'|url }}" href="img/favicon.png" />
 	<!--Bootstrap Stylesheet-->
@@ -42,7 +42,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light p-0">
 			<div class="container">
 				<a class="navbar-brand" href="#welcomeArea">
-					Finan
+					GP Consultoria
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,17 +54,16 @@
               {% for href, title in [
                 ['#welcomeArea', 'Home'],
                 ['#sobre', 'Sobre'],
-                ['#textos', 'Textos'],
                 ['#footer', 'Contato']
               ] %}
                 <li class="nav-item"><a class="nav-link" href="{{ href|url }}">{{ title }}</a></li>
               {% endfor %}
 					</ul>
-					<div class="viewPlan">
+					<!--<div class="viewPlan">
 						<a href="#package">
 							View Plan
 						</a>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</nav>
@@ -78,7 +77,7 @@
 	<!-- Footer Area Start -->
 	<footer id="footer">
 		<div class="container">
-			<div class="row newslatterBox">
+			<!-- <div class="row newslatterBox">
 				<div class="col-12">
 					<div class="box d-flex">
 						<div class="left">
@@ -95,20 +94,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<div class="row">
 				<div class="col-lg-5">
 					<div class="box">
 						<div class="logo">
 							<a href="#">
-								Finan
+								GP Consultoria
 							</a>
 						</div>
 						<p>
-							We are a full service Digital Marketing Agency all
-							the foundational tool you need inbound success.
-							With this module theres no need to another day.
+							Conhecimento para fazer seu dinheiro trabalhar por você.
 						</p>
+						<!--
 						<div class="social_links">
 							<ul>
 								<li>
@@ -133,6 +131,7 @@
 								</li>
 							</ul>
 						</div>
+						-->
 					</div>
 				</div>
 				<div class="col-lg-2">
@@ -141,58 +140,35 @@
 							Links
 						</h2>
 						<ul>
-							<li>
-								<a href="#">
-									Home
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									About
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Services
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									FAQ
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Contact
-								</a>
-							</li>
+							{% for href, title in [
+								['#welcomeArea', 'Home'],
+								['#sobre', 'Sobre'],
+								['#footer', 'Contato']
+								] %}
+								<li><a href="{{ href|url }}">{{ title }}</a></li>
+							{% endfor %}
 						</ul>
 					</div>
 				</div>
 				<div class="col-lg-2">
 					<div class="box box3">
 						<h2>
-							About Us
+							Ferramentas
 						</h2>
 						<ul>
 							<li>
-								<a href="#">
-									About Us
+								<a href="https://bancodata.com.br/">
+									Banco Data
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									Blog
+								<a href="http://www.b3.com.br/pt_br/">
+									B³
 								</a>
 							</li>
 							<li>
-								<a href="#">
-									Contact Us
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									Sign in
+								<a href="https://www.bcb.gov.br/acessoinformacao/legado?url=https:%2F%2Fwww.bcb.gov.br%2Fpec%2FGCI%2FPORT%2Freadout%2Freadout.asp">
+									Boletim Focus
 								</a>
 							</li>
 						</ul>
@@ -201,18 +177,27 @@
 				<div class="col-lg-3">
 					<div class="box box4">
 						<h2>
-							Contact Us
+							Contato
 						</h2>
-						<a href="#">
-							guidopercu@gmail.com
-						</a>
+						<ul>
+							<li>
+								<a href="mailto:guidopercu@gmail.com">
+									guidopercu@gmail.com
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									(21) 99824-0042
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="copyright">
 			<p class="text-center">
-				&copy; Copyright 2019 by Guido Luz Percú.
+				&copy; Copyright 2019 by <a href="/">GP Consultoria</a>
 			</p>
 		</div>
 	</footer>
