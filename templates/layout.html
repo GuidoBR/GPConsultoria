@@ -1,34 +1,3 @@
-<!--
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>— guido-consultoria-financeira</title>
-<body>
-  <header>
-    <h1>guido-consultoria-financeira</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-  </div>
-  <footer>
-    &copy; Copyright 2019 by Guido Luz Percú.
-  </footer>
-</body>
--->
-
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -45,7 +14,7 @@
 	<meta name="description" content="">
 	<title>{% block title %}{% endblock %} — guido-consultoria-financeira</title>
 	<!--Favicon-->
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+	<link rel="shortcut icon" type="{{ '/static/image/png'|url }}" href="img/favicon.png" />
 	<!--Bootstrap Stylesheet-->
 	<link rel="stylesheet" type="text/css" href="{{ '/static/css/bootstrap.css'|url }}">
 	<!--Font Awesome Stylesheet-->
