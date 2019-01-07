@@ -61,10 +61,14 @@
   </p>
 {% endmacro %}
 
-{% macro render_blog_post_body(post, from_index=false) %}
+{% macro render_blog_post_body(post) %}
 {{ post.body }}
 {% endmacro %}
 
-{% macro render_blog_post_image(post, from_index=false) %}
+{% macro render_blog_post_image(post) %}
 <img class="img-fluid" src="{{ post.image | url }}" alt="{{ post.image_alt }}">
+{% endmacro %}
+
+{% macro render_blog_post_summary_only(post) %}
+  {{ post.summary }}
 {% endmacro %}

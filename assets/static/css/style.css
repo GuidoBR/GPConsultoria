@@ -1766,3 +1766,35 @@ Footer Area End
     background: -moz-linear-gradient(to left, #efb1fd, #5271c4);
     background: linear-gradient(to left, #efb1fd, #5271c4);
 }
+
+/*==================================================
+16. Blog Post
+====================================================*/
+
+#blog-post {
+    margin-top: 32px;
+}
+
+#blog-post .heading-title p {
+    margin-top: 3px;
+    font-size: 16px;
+    color: #575f84;
+    margin-bottom: 24px;
+}
+
+#blog-post .content p {
+    color: #575f84;
+}
+
+#blog-post .blog-content {
+    margin-top: 15px;
+}
+
+#blog-post .blog-content h3 {
+    margin-top: 10px;
+}
+
+#blog-post .blog-content a {
+    text-decoration: underline;
+}
+

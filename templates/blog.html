@@ -42,7 +42,7 @@
         <div class="col-md-6">
           <div class="box">
             <div class="img">
-              <a href="/blog/introducao-ao-tesouro-direto/">
+              <a href="{{ child.path | url }}">
                 <img class="img-fluid" src="{{ '/static/img/shoose/c'|url ~ range(1, 3) | random ~ '.png' }}" alt="">
               </a>
             </div>
@@ -50,7 +50,7 @@
               <h3>
                   {{ render_blog_post_summary(child, from_index=true) }}
               </h3>
-              <a class="viweBtn" href="/blog/introducao-ao-tesouro-direto/">
+              <a class="viweBtn" href="{{ child.path | url }}">
                 Ler
               </a>
             </div>
