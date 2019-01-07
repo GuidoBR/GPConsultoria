@@ -1,11 +1,46 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/blog.html" import render_blog_post_summary %}
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {% for child in this.pagination.items %}
-    {{ render_blog_post(child, from_index=true) }}
-  {% endfor %}
 
-  {{ render_pagination(this.pagination) }}
+<section id="welcomeArea">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <div class="topcontent">
+          <h2>Textos</h2>
+          <div class="sectionSeparator"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="aboutUs">
+  <div class="container">
+    {% for child in this.pagination.items %}
+    <div class="row">
+      <div class="col-md-6 d-flex align-self-center">
+        <div class="left">
+          <div class="heading-title">
+            <h2>
+                {{ render_blog_post_summary(child, from_index=true) }}
+            </h2>
+            <div class="sectionSeparator"></div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    <div class="col-md-6">
+        <div class="right">
+          <img class="img-fluid" src="{{ '/static/img/about.png'|url }}" alt="">
+        </div>
+      </div>
+  </div>
+</section>
+
+
+
+
 {% endblock %}
