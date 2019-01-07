@@ -1,6 +1,44 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/blog.html" import render_blog_post, render_blog_post_title, render_blog_post_body, render_blog_post_meta, render_blog_post_image %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {{ render_blog_post(this) }}
+<section id="welcomeArea">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <div class="topcontent">
+            <h1>GP Consultoria Financeira</h1>
+            <div class="sectionSeparator"></div>
+            <p>Uma conversa franca sobre dinheiro e investimentos. Te ajudo a encontrar suas prioridades e a montar e seguir
+              um plano para conquistar seus objetivos.
+            </p>
+            <!-- <a class="hStartNow" href="#footer">Fale comigo!</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="aboutUs">
+      <div class="container">
+          <div class="row">
+              <div class="heading-title">
+                <h2> {{ render_blog_post_title(this) }} </h2>
+                <div class="sectionSeparator"></div>
+                {{ render_blog_post_meta(this) }}
+              </div>
+
+              <div class="col-md-6">
+                  <div class="left">
+                    {{ render_blog_post_body(this) }}
+                  </div>
+              </div>
+
+              <div class="col-md-6">
+                  <div class="right">
+                      {{ render_blog_post_image(this) }}
+                  </div>
+              </div>
+        </div>
+      </div>
+  </section>
 {% endblock %}

@@ -39,3 +39,32 @@
   </div>
 
 {% endmacro %}
+
+{% macro render_blog_post_title(post, from_index=false) %}
+{% if from_index %}
+    <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+  {% else %}
+    <h2>{{ post.title }}</h2>
+  {% endif %}
+{% endmacro %}
+
+{% macro render_blog_post_meta(post, from_index=false) %}
+<p class="meta">
+    written by
+    {% if post.twitter_handle %}
+      <a href="https://twitter.com/{{ post.twitter_handle
+        }}">{{ post.author or post.twitter_handle }}</a>
+    {% else %}
+      {{ post.author }}
+    {% endif %}
+    on {{ post.pub_date }}
+  </p>
+{% endmacro %}
+
+{% macro render_blog_post_body(post, from_index=false) %}
+{{ post.body }}
+{% endmacro %}
+
+{% macro render_blog_post_image(post, from_index=false) %}
+<img class="img-fluid" src="{{ post.image | url }}" alt="{{ post.image_alt }}">
+{% endmacro %}
