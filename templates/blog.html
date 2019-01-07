@@ -5,42 +5,58 @@
 {% block body %}
 
 <section id="welcomeArea">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10 text-center">
-        <div class="topcontent">
-          <h2>Textos</h2>
-          <div class="sectionSeparator"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="sobre" class="aboutUs">
-  <div class="container">
-    {% for child in this.pagination.items %}
-    <div class="row">
-      <div class="col-md-6 d-flex align-self-center">
-        <div class="left">
-          <div class="heading-title">
-            <h2>
-                {{ render_blog_post_summary(child, from_index=true) }}
-            </h2>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+          <div class="topcontent">
+            <h1>GP Consultoria Financeira</h1>
             <div class="sectionSeparator"></div>
+            <p>Uma conversa franca sobre dinheiro e investimentos. Te ajudo a encontrar suas prioridades e a montar e seguir
+              um plano para conquistar seus objetivos.
+            </p>
+            <!-- <a class="hStartNow" href="#footer">Fale comigo!</a> -->
           </div>
         </div>
       </div>
-    {% endfor %}
-    <div class="col-md-6">
-        <div class="right">
-          <img class="img-fluid" src="{{ '/static/img/about.png'|url }}" alt="">
+    </div>
+  </section>
+<h1></h1>
+<section id="textos">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8 text-center">
+          <div class="heading-title">
+            <h2>
+              <a href="/blog/">Textos</a>
+            </h2>
+            <div class="sectionSeparator"></div>
+            <!--<p>
+              We bring the right people together to challenge established thinking and drive transformation.
+              We will show the way to successive.
+            </p>-->
+          </div>
         </div>
       </div>
-  </div>
-</section>
-
-
-
-
+      <div class="row">
+      {% for child in this.pagination.items %}
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img">
+              <a href="/blog/introducao-ao-tesouro-direto/">
+                <img class="img-fluid" src="{{ '/static/img/shoose/c'|url ~ range(1, 3) | random ~ '.png' }}" alt="">
+              </a>
+            </div>
+            <div class="content">
+              <h3>
+                  {{ render_blog_post_summary(child, from_index=true) }}
+              </h3>
+              <a class="viweBtn" href="/blog/introducao-ao-tesouro-direto/">
+                Ler
+              </a>
+            </div>
+          </div>
+        </div>
+    {% endfor %}
+    </div>
+  </section>
 {% endblock %}
