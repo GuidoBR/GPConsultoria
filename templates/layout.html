@@ -52,10 +52,10 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
               {% for href, title in [
-                ['#welcomeArea', 'Home'],
-                ['#textos', 'Textos'],
-                ['#sobre', 'Sobre'],
-                ['#footer', 'Contato']
+                ['/#welcomeArea', 'Home'],
+                ['/#textos', 'Textos'],
+                ['/#sobre', 'Sobre'],
+                ['/#footer', 'Contato']
               ] %}
                 <li class="nav-item"><a class="nav-link" href="{{ href|url }}">{{ title }}</a></li>
               {% endfor %}
@@ -142,10 +142,10 @@
 						</h2>
 						<ul>
 							{% for href, title in [
-								['#welcomeArea', 'Home'],
-								['#textos', 'Textos'],
-								['#sobre', 'Sobre'],
-								['#footer', 'Contato']
+								['/#welcomeArea', 'Home'],
+								['/#textos', 'Textos'],
+								['/#sobre', 'Sobre'],
+								['/#footer', 'Contato']
 								] %}
 								<li><a href="{{ href|url }}">{{ title }}</a></li>
 							{% endfor %}
