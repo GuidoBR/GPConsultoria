@@ -979,9 +979,8 @@ Feature Area Start
     border-radius: 10px;
 }
 
-.calculate .box input {
+.calculate .box input, textarea {
     width: 100%;
-    height: 27px;
     background: none;
     border-top: 0px;
     border-left: 0px;
@@ -990,6 +989,10 @@ Feature Area Start
     color: #fff;
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
+}
+
+.calculate .box input {
+    height: 27px;
 }
 
 .calculate .box input::placeholder {
@@ -1008,7 +1011,7 @@ Feature Area Start
     font-weight: 500;
 }
 
-.calculate .box input:focus {
+.calculate .box input:focus, textarea {
     outline: 0px;
 }
 
