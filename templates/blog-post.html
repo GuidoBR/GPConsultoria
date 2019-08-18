@@ -27,19 +27,12 @@
       </div>
 
       <div class="row blog-content">
-        <div class="col-md-8">
-          <div class="left">
-            {{ render_blog_post_body(this) }}
+        <div class="col-md-10">
+          <div class="content left">
+              {{ render_blog_post_image(this) }}
+              {{ render_blog_post_body(this) }}
           </div>
         </div>
-
-        <div class="col-md-4">
-            <div class="right">
-              {{ render_blog_post_image(this) }}
-            </div>
-          </div>
-      </div>
-
     </div>
 
 

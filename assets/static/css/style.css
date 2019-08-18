@@ -99,6 +99,7 @@ h2 {
     font-size: 40px;
     font-weight: 600;
     font-family: 'Exo', sans-serif;
+    color: #fff;
 }
 
 h3 {
@@ -1776,6 +1777,7 @@ Footer Area End
 
 #blog-post {
     margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 #blog-post .heading-title p {
@@ -1787,6 +1789,8 @@ Footer Area End
 
 #blog-post .content p {
     color: #575f84;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 #blog-post .blog-content {
@@ -1794,7 +1798,9 @@ Footer Area End
 }
 
 #blog-post .blog-content h3 {
-    margin-top: 10px;
+    margin-top: 30px;
+    color: #fe846f;
+    font-weight: bold;
 }
 
 #blog-post .blog-content a {
