@@ -14,5 +14,6 @@ body {
   align-items: center;
 
   color: #fff;
-  background: linear-gradient(to right, rgb(83, 105, 118), rgb(41, 46, 73))
+  background: rgb(150,0,255);
+  background: radial-gradient(circle, rgba(150,0,255,1) 0%, rgba(237,75,220,1) 35%, rgba(215,0,211,1) 100%);
 }

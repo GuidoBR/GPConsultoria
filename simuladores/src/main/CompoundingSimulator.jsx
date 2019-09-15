@@ -19,6 +19,7 @@ export default class CompoundingSimulator extends Component {
     render() {
         return (
             <div className="simulator">
+                <h1>Simulador</h1>
                 <div className="input">
                     <MoneyInput label="Valor Inicial" value="1000" />
                     <MoneyInput label="Valor Mensal" value="500" />
