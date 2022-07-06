@@ -1,9 +1,14 @@
-
 @media (min-width: 1921px) { 
     #welcomeArea{
         background: url(../img/homebg.png) no-repeat top;
         background-size: cover;
 
+    }
+ }
+
+@media (max-width: 3000px) {
+    #sobreMim {
+        margin-top: 100px;
     }
  }
 
@@ -13,7 +18,10 @@
     }
  }
 
-@media (max-width: 1199.98px) { 
+@media (max-width: 1199.98px) {
+    #sobreMim {
+        margin-top: 100px;
+    }
     #welcomeArea .left .searcAddress input {
         width: 300px;
     } 
@@ -79,7 +87,7 @@
     .row.aboutTop {
         margin-top: 100px;
     }
-    #sobre {
+    #sobre, #sobreMim {
         margin-top: 100px;
     }
     h2 {
